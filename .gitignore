@@ -94,6 +94,7 @@ iOSInjectionProject/
 /buid
 
 Podfile.lock
+**/Pods
 
 CocoaPodsPub/LibOpenCCiOS.xcframework
 CocoaPodsPub/*.tar.gz
