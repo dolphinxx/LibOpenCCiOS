@@ -18,32 +18,25 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Build OpenCC iOS fat binary for flutter_opencc_ffi.
+OpenCC iOS fat binary for flutter_opencc_ffi.
                        DESC
 
   s.homepage         = 'https://github.com/dolphinxx/LibOpenCCiOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache License 2.0', :file => 'LICENSE' }
   s.author           = { 'dolphinxx' => 'bravedolphinxx@gmail.com' }
-  s.source           = { :http => 'https://github.com/dolphinxx/LibOpenCCiOS/releases/download/0.0.1.dev/LibOpenCCiOS.tar.gz' }
+  s.source           = { :http => 'https://github.com/dolphinxx/LibOpenCCiOS/releases/download/0.0.1.binary/libopencc.zip' }
+  s.public_header_files= 'opencc.h'
+  s.source_files = 'opencc.h'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
+  s.libraries = 'c++'
 
   s.xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.requires_arc = true
-  s.vendored_frameworks = 'LibOpenCCiOS.xcframework'
-
-  #s.libraries = 'c++'
-
-  # s.resource_bundles = {
-  #   'LibOpenCCiOS' => ['LibOpenCCiOS/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.vendored_libraries = 'libopencc.a'
 end

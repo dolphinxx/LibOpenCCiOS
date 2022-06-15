@@ -93,5 +93,10 @@ iOSInjectionProject/
 .idea
 /buid
 
+Podfile.lock
+
 CocoaPodsPub/LibOpenCCiOS.xcframework
 CocoaPodsPub/*.tar.gz
+
+CocoaPodsPubBinary/libopencc.a
+CocoaPodsPubBinary/libopencc.zip
