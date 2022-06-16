@@ -25,7 +25,7 @@ OpenCC iOS fat binary for flutter_opencc_ffi.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache License 2.0', :file => 'LICENSE' }
   s.author           = { 'dolphinxx' => 'bravedolphinxx@gmail.com' }
-  s.source           = { :git => 'https://github.com/dolphinxx/FlutterOpenCCiOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dolphinxx/LibOpenCCiOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
@@ -109,7 +109,7 @@ OpenCC iOS fat binary for flutter_opencc_ffi.
   s.libraries = 'c++'
 
   # s.resource_bundles = {
-  #   'FlutterOpenCCiOS' => ['FlutterOpenCCiOS/Assets/*.png']
+  #   'LibOpenCCiOS' => ['LibOpenCCiOS/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
