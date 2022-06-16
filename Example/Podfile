@@ -4,5 +4,5 @@ use_frameworks!
 target 'Example' do
   pod 'LibOpenCCiOS', '~> 0.0.2'
   #pod 'LibOpenCCiOS', :path => '..'
-  #pod 'LibOpenCCiOS', :git => 'https://github.com/dolphinxx/LibOpenCCiOS.git', :tag => '0.0.2'
+  #pod 'LibOpenCCiOS', :git => 'https://github.com/dolphinxx/LibOpenCCiOS.git', :tag => '0.0.2', :submodules => true
 end
