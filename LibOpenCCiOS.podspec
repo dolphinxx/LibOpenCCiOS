@@ -85,6 +85,7 @@ OpenCC iOS fat binary for flutter_opencc_ffi.
   # There are two vector.h files in marisa, so make all third-part header files preserved instead of
   # included into source_files to prevent conflict.
   s.preserve_paths = [
+    "OpenCC/deps/marisa-0.2.6/include/**/*.h",
     "OpenCC/deps/marisa-0.2.6/lib/marisa/**/*.h",
     "OpenCC/deps/rapidjson-1.1.0/**/*.h",
     "OpenCC/deps/tclap-1.2.2/**/*.h"
