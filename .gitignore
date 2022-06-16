@@ -93,6 +93,7 @@ iOSInjectionProject/
 .idea
 /buid
 /build-mac
+/tmp
 
 Podfile.lock
 **/Pods

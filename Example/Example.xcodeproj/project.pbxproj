@@ -30,7 +30,7 @@
 		4AA061CF2859984B0069A2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA061D5285998F40069A2CE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4AA061D728599CC90069A2CE /* Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		4AA062152859A81C0069A2CE /* opencc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = opencc; path = ../../../../Downloads/build/share/opencc; sourceTree = "<group>"; };
+		4AA062152859A81C0069A2CE /* opencc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = opencc; path = ../../tmp/build/share/opencc; sourceTree = "<group>"; };
 		4AA06217285AFA6F0069A2CE /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		509C59162E535D8A4EF27C6C /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		902329DD1A4FABCB8CCC0009 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
