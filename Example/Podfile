@@ -2,7 +2,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'Example' do
-  pod 'LibOpenCCiOS', '~> 0.0.1'
-  #pod 'LibOpenCCiOS', :path => '../CocoaPodsPubBinary/'
-  #pod 'LibOpenCCiOS', :http => 'https://github.com/dolphinxx/LibOpenCCiOS/releases/download/0.0.1.binary/libopencc.zip'
+  pod 'LibOpenCCiOS', '~> 0.0.2'
+  #pod 'LibOpenCCiOS', :path => '..'
+  #pod 'LibOpenCCiOS', :git => 'https://github.com/dolphinxx/FlutterOpenCCiOS.git', :tag => '0.0.2'
 end

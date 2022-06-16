@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         resultTextView.text = convert(text: inputTextView.text)
     }
 
-    func textViewDidChange(_ textView: UITextView) {
+    func textViewDidEndEditing(_ textView: UITextView) {
         resultTextView.text = convert(text: inputTextView.text)
     }
 
