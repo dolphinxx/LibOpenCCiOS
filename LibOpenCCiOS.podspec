@@ -75,12 +75,10 @@ OpenCC iOS fat binary for flutter_opencc_ffi.
 
     "opencc_config.h",
     "interface.cpp",
-    "LibOpenCCiOS.h",
-    "LibOpenCCiOSHeader.h",
-    "opencc.h"
+    "LibOpenCCiOS.h"
   ]
 
-  s.public_header_files = ["opencc.h"]
+  s.public_header_files = ["LibOpenCCiOS.h"]
 
   # There are two vector.h files in marisa, so make all third-part header files preserved instead of
   # included into source_files to prevent conflict.

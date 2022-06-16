@@ -10,4 +10,4 @@
 
 
 #endif /* Example_Bridging_Header_h */
-#import <LibOpenCCiOS/opencc.h>
+#import <LibOpenCCiOS/LibOpenCCiOS.h>
