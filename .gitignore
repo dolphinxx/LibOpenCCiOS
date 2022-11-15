@@ -88,3 +88,18 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+
+.idea
+/buid
+/build-mac
+/tmp
+
+Podfile.lock
+**/Pods
+
+CocoaPodsPub/LibOpenCCiOS.xcframework
+CocoaPodsPub/*.tar.gz
+
+CocoaPodsPubBinary/libopencc.a
+CocoaPodsPubBinary/libopencc.zip
