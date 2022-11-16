@@ -10,11 +10,12 @@ import UIKit
 class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet var inputTextView: UITextView!
     @IBOutlet var resultTextView: UITextView!
+    var convertId:Int32 = 0;
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        opencc_init_converter("s2tw", Bundle.main.url(forResource: "s2tw", withExtension: "json", subdirectory: "opencc")!.path)
+        convertId = opencc_init_converter(Bundle.main.url(forResource: "s2tw", withExtension: "json", subdirectory: "opencc")!.path)
         inputTextView.delegate = self
         inputTextView.text = "着装污染虚伪发泄棱柱群众里面"
         let dummy = opencc_dummy_method_to_enforce_bundling()
@@ -27,7 +28,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
 
     func convert(text:String)->String {
-        let convertedPtr = opencc_convert(text, "s2tw")
+        let convertedPtr = opencc_convert(text, convertId)
         let converted = String(cString: convertedPtr!)
         opencc_free_string(UnsafeMutablePointer(mutating: convertedPtr!))
         return converted
